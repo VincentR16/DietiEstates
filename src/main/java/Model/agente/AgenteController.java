@@ -1,4 +1,4 @@
-package model.agente;
+package Model.agente;
 
 import org.springframework.web.bind.annotation.*;
 

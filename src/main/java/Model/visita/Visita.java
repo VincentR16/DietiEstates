@@ -1,4 +1,4 @@
-package model.agenzia;
+package Model.visita;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -6,18 +6,17 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@AllArgsConstructor
+
 @NoArgsConstructor
+@AllArgsConstructor
 @Data
 @Entity
-public class Agenzia {
+public class Visita {
 
     @Id
     private Long id;
-    private Long gestore;
-    private Long admin;
 
-
-    private String nome;
-    private String sedeLegale;
+    private Long cliente;
+    private Long immobile;
+    private Long agente;
 }
