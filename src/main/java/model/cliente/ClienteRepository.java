@@ -1,4 +1,4 @@
-package Model.Cliente;
+package model.cliente;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

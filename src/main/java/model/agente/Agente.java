@@ -1,4 +1,4 @@
-package Model.Agente;
+package model.agente;
 
 
 import jakarta.persistence.Entity;
