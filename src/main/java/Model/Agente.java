@@ -1,11 +1,11 @@
 package Model;
 
-import lombok.AllArgsConstructor;
 
+import lombok.AllArgsConstructor;
 import java.util.Date;
 
 @AllArgsConstructor
-public class Cliente {
+public class Agente {
 
     private Long id;
     private String username;
@@ -14,6 +14,7 @@ public class Cliente {
     private String nome;
     private String cognome;
     private Date dataDiNascita;
+    private String Agenzia;
 
     public Long getId() {
         return id;
@@ -69,5 +70,13 @@ public class Cliente {
 
     public void setDataDiNascita(Date dataDiNascita) {
         this.dataDiNascita = dataDiNascita;
+    }
+
+    public String getAgenzia() {
+        return Agenzia;
+    }
+
+    public void setAgenzia(String agenzia) {
+        Agenzia = agenzia;
     }
 }
