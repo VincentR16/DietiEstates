@@ -10,4 +10,5 @@ public class ProgettoIngswApplication {
 		SpringApplication.run(ProgettoIngswApplication.class, args);
 	}
 
+
 }
