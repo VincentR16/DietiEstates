@@ -6,7 +6,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/users")
-public class ControllerCliente {
+public class ClienteController {
 
     private ClienteRepository clienteRepository;
 

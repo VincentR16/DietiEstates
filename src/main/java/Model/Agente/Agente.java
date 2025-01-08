@@ -1,27 +1,27 @@
 package Model.Agente;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import lombok.*;
 
 import java.util.Date;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
-@Setter
+@Data
+@Entity
 public class Agente {
 
+
+    @Id
     private Long id;
+    private Long agenzia;
     private String username;
     private String password;
     private String email;
     private String nome;
     private String cognome;
     private Date dataDiNascita;
-    private String Agenzia;
-
 
 }
