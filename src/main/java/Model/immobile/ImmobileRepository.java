@@ -1,4 +1,4 @@
-package model.immobile;
+package Model.immobile;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

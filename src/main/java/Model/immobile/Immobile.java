@@ -1,4 +1,4 @@
-package model.immobile;
+package Model.immobile;
 
 
 import jakarta.persistence.Entity;
