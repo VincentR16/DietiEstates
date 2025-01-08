@@ -1,4 +1,4 @@
-package Model;
+package Model.Agenzia;
 
 import lombok.AllArgsConstructor;
 

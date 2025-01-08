@@ -16,7 +16,7 @@ public class ControllerCliente {
     }
     @PostMapping
     public Cliente createUser(@RequestBody Cliente cliente) {
-        return ClienteRepository.save(cliente);
+        return clienteRepository.save(cliente);
     }
 
     @GetMapping("/{id}")
