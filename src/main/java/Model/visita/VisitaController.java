@@ -1,4 +1,4 @@
-package Model.visita;
+package model.visita;
 
 
 import org.springframework.web.bind.annotation.*;

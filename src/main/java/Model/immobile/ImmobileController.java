@@ -1,4 +1,4 @@
-package Model.immobile;
+package model.immobile;
 
 import org.springframework.web.bind.annotation.*;
 

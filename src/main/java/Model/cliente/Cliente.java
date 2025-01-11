@@ -1,4 +1,4 @@
-package Model.cliente;
+package model.cliente;
 
 
 import jakarta.persistence.*;

@@ -1,4 +1,4 @@
-package Model.agenzia;
+package model.agenzia;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

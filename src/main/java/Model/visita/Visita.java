@@ -1,4 +1,4 @@
-package Model.visita;
+package model.visita;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

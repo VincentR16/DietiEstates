@@ -1,4 +1,4 @@
-package Model.agente;
+package model.agente;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

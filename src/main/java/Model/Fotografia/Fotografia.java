@@ -1,4 +1,4 @@
-package Model.Fotografia;
+package model.Fotografia;
 
 public class Fotografia {
 
