@@ -6,5 +6,5 @@ import java.util.Optional;
 
 public interface ImmobileRepository extends JpaRepository<Immobile, Long> {
 
-     Optional<Immobile>  findImmobileById(Long id);
+     Optional<Immobile> findById(Long id);
 }

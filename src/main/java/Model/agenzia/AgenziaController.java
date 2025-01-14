@@ -13,15 +13,15 @@ public class AgenziaController {
     private AgenziaRepository agenziaRepository;
 
     @GetMapping
-    public List<Agenzia> listaAgenzie(){return agenziaRepository.findAll();}
+    public List<Agenzia> list(){return agenziaRepository.findAll();}
 
     @PostMapping
-    public Agenzia createAgenzia(@RequestBody Agenzia agenzia){return agenziaRepository.save(agenzia);}
+    public Agenzia create(@RequestBody Agenzia agenzia){return agenziaRepository.save(agenzia);}
 
     @GetMapping("/{id}")
-    public Agenzia getAgenziabyId(@PathVariable Long id){return agenziaRepository.findAgenziaById(id)
+    public Agenzia getbyId(@PathVariable Long id){return agenziaRepository.findAgenziaById(id)
             .orElseThrow(() -> new RuntimeException("Agente not found")); }
 
     @DeleteMapping("/{id}")
-    public void deleteAgenzia(@PathVariable Long id){agenziaRepository.deleteById(id);}
+    public void delete(@PathVariable Long id){agenziaRepository.deleteById(id);}
 }

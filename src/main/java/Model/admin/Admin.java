@@ -1,33 +1,26 @@
-package model.agente;
-
+package model.admin;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import java.io.Serializable;
 import java.util.Collection;
-import java.util.Date;
 import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
 @Entity
-public class Agente implements UserDetails{
-
+@Data
+public class Admin implements UserDetails {
 
     @Id
-    private Long id;
-    private Long agenzia;
+    private int id;
     private String username;
     private String password;
-    private String email;
-    private String nome;
-    private String cognome;
-    private Date dataDiNascita;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

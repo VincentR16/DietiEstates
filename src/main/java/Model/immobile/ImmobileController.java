@@ -11,14 +11,15 @@ public class ImmobileController {
     private ImmobileRepository immobileRepository;
 
     @GetMapping
-    public List<Immobile> listaImmobili(){return immobileRepository.findAll();}
+    public List<Immobile> list(){return immobileRepository.findAll();}
 
     @PostMapping
-    public Immobile createImmobile (@RequestBody  Immobile immobile){return immobileRepository.save(immobile);}
+    public Immobile create (@RequestBody  Immobile immobile){return immobileRepository.save(immobile);}
 
     @GetMapping("/{id}")
-    public Immobile getImmobilebyId(@PathVariable Long id){return immobileRepository.findImmobileById(id)
+    public Immobile getbyId(@PathVariable Long id){return immobileRepository.findById(id)
             .orElseThrow(() -> new RuntimeException("Immobile not found")); }
+
     @DeleteMapping("/{id}")
-    public void deleteImmobile(@PathVariable Long id){immobileRepository.deleteById(id);}
+    public void delete(@PathVariable Long id){immobileRepository.deleteById(id);}
 }
